@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- daisyui cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Blog</title>
+    <style>
+      .font-lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky top-0">
+      <nav class="pt-6 pb-16 bg-[#F9F7F3]">
+        <div class="w-11/12 m-auto flex justify-between items-center">
+          <a href="./index.html">
+            <button
+              class="py-3 px-8 rounded-lg bg-[#B4F461] font-semibold text-xl"
+            >
+              Home
+            </button>
+          </a>
+          <div class="flex items-center gap-4">
+            <div>
+              <img src="./assets/logo.png" alt="" />
+            </div>
+            <div class="font-semibold text-xl">Donate Bangladesh</div>
+          </div>
+          <div class="flex items-center gap-3">
+            <div><img src="./assets/coin.png" alt="" /></div>
+            <div class="font-medium text-xl">
+              <span>5500</span>
+              <span>BDT</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is DOM used for?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM is used to dynamically manipulate HTML elements, enabling
+            developers to create interactive web pages by modifying structure,
+            content, and styles.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How to create new elements?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can create new elements using document.createElement() and
+            append them to the DOM using methods like appendChild() or
+            insertBefore().
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How to remove DOM elements?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can remove DOM elements using element.remove() or
+            parentElement.removeChild(childElement) to delete specific elements
+            from the document structure.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How to change an attribute?
+        </div>
+        <div class="collapse-content">
+          <p>
+            You can change an element's attribute using setAttribute() or
+            directly access it as a property, like element.src = "newURL".
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
